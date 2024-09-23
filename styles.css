@@ -1,0 +1,229 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2a2a2a; /* Darker background to match header and hero */
+    color: #f5f5f5; /* Lighter text for contrast */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #d62828;
+}
+
+.hero {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 2rem 0;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem; 
+    margin-left: 120px;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 190px; 
+    height: 190px;
+    border: 5px solid #e63946;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 700px;
+    margin-right: 60px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero span {
+    color: #e63946;
+}
+
+.cta-button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d62828;
+}
+
+.about, .skills, .portfolio, .contact, .education {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #333; /* Darker background for content sections */
+    color: white; /* White text for readability */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #e63946;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-item {
+    text-align: center;
+    margin-bottom: 2rem;
+    flex-basis: 18%; 
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+.skill-item i {
+    font-size: 3rem;
+    color: #e63946;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    display: none;
+    color: white;
+}
+
+.portfolio-info a {
+    color: #e63946; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.portfolio-info a:hover {
+    color: #d62828; 
+    text-decoration: underline; 
+}
+
+.centered-text {
+    text-align: center;
+    margin-top: -10px; 
+    margin-bottom: 50px; 
+    font-size: 1.1rem;
+}
+
+.education-content {
+    display: flex;
+    align-items: center;
+}
+
+.kpm-logo {
+    width: 80px; 
+    height: auto;
+    margin-right: 30px;
+    margin-left: 280px;
+}
+
+.education-info {
+    flex-grow: 1;
+}
+
+.portfolio-item:hover .portfolio-info {
+    display: block;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-link {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #d62828;
+}
+
+.contact-link i {
+    margin-right: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1e1e1e;
+    color: white;
+}
